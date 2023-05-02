@@ -1,5 +1,5 @@
 resource "aws_instance" "frontend" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -16,7 +16,7 @@ resource "aws_route53_record" "frontend" {
 
 
 resource "aws_instance" "mongodb" {
-  ami                    = "ami-0089b8e98cd95257d"
+  ami                    = "ami-0b5a2b5b8f2be4ec2"
   instance_type          = "t3.micro"
   vpc_security_group_ids = ["sg-07af4adb590deb120"]
   tags                   = {
@@ -33,7 +33,7 @@ resource "aws_route53_record" "mongodb" {
 }
 
 resource "aws_instance" "redis" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -50,7 +50,7 @@ resource "aws_route53_record" "redis" {
 }
 
 resource "aws_instance" "catalogue" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -67,7 +67,7 @@ resource "aws_route53_record" "catalogue" {
 }
 
 resource "aws_instance" "user" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -84,7 +84,7 @@ resource "aws_route53_record" "user" {
 }
 
 resource "aws_instance" "shipping" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -101,7 +101,7 @@ resource "aws_route53_record" "shipping" {
 }
 
 resource "aws_instance" "payment" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -118,7 +118,7 @@ resource "aws_route53_record" "payment" {
 }
 
 resource "aws_instance" "cart" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -135,7 +135,7 @@ resource "aws_route53_record" "cart" {
 }
 
 resource "aws_instance" "mysql" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -152,7 +152,7 @@ resource "aws_route53_record" "mysql" {
 }
 
 resource "aws_instance" "rabbitmq" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
@@ -169,7 +169,7 @@ resource "aws_route53_record" "rabbitmq" {
 }
 
 resource "aws_instance" "dispatch" {
-  ami                     = "ami-0089b8e98cd95257d"
+  ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t3.micro"
   vpc_security_group_ids  = ["sg-07af4adb590deb120"]
   tags = {
