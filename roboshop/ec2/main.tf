@@ -27,7 +27,6 @@ resource "null_resource" "provisioner" {
       "sudo bash ${var.component}.sh ${var.password}"
     ]
   }
-
 }
 
 resource "aws_security_group" "sg" {
